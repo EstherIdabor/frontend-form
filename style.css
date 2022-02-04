@@ -1,0 +1,121 @@
+:root{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body{
+    background: url(images/bg-intro-desktop.png);
+    background-color: var(--Red);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    color: white;
+    width: 90%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+p{
+    font-weight: 400;
+}
+.strong{
+    font-weight: 700;
+}
+.copy{
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.copy-btn, .main-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    margin-bottom: 2rem;
+    color: white;
+    border: 0;
+    padding: 1.5em;
+    background: var(--Blue);
+    width: 90%;
+    border-radius: 10px;
+    align-self: center;
+    font-weight: 400;
+    box-shadow: 0 0 3px 0 var(--Dark-Blue);
+}
+
+.main-form{
+    background: white;
+    color: black;
+    padding: 1.5em;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 red;
+}
+
+.claim{
+    display: block;
+}
+form input[type="text"],
+form input[type="password"]{
+    padding: 1rem;
+    margin-bottom: 20px;
+    display: block;
+    width: 90%;
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 10px;
+}
+form input[type="text"]:focus,
+form input[type="password"]:focus{
+      outline: 1px solid var(--Blue);
+}
+.claim{
+    margin-bottom: 2rem;
+    color: white;
+    border: 0;
+    padding: 1.5em;
+    background: var(--Green);
+    width: 100%;
+    border-radius: 8px;
+    align-self: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer; 
+    box-shadow: 0 0 3px 0 var(--Green);
+}
+.claim:hover{
+    opacity: 0.8;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+@media(min-width:750px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        margin-top: 100px;
+        width: 80%;
+    }
+    .copy{
+        flex: 1;
+        text-align: left;
+    }
+    .wrapper{
+        flex: 1;
+    }
+}
